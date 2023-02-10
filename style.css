@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.panel {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.panel.orange {
+    background-color: #ff983e;
+}
+
+.panel.violet {
+    background-color: #7c68ee;
+}
+
+.panel.blue {
+    background-color: #2773c9;
+}
+
+.panel p {
+    font-size: 32px;
+    color: #fff;
+}
